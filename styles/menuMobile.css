@@ -1,0 +1,51 @@
+.mobileMenu {
+    padding: 24px;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileMenu a {
+    padding: 24px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobileMenu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobileMenu ul:nth-child(1) {
+    border-bottom: 1px solid var(--veryLightPink);
+}
+
+.mobileMenu ul li {
+    margin-bottom: 24px;
+}
+
+.email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+}
+
+.signOut {
+    font-size: var(--sm);
+    color: var(--hospitalGreen) !important;
+}
+
+.mobileMenu div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.mobileMenu div ul {
+    display: flex;
+    border: none !important;
+    flex-direction: column;
+    justify-content: end !important;
+}

@@ -1,0 +1,91 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0 24px 0 24px;
+}
+
+.menu {
+    display: none;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbarLeft {
+    display: flex;
+}
+
+.navbarLeft ul {
+    margin-left: 12px;
+}
+
+.navbarLeft ul li a,
+.navbarRight ul li a {
+    text-decoration: none;
+    color: var(--veryLightPink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbarLeft ul li a:hover,
+.navbarRight ul li a:hover {
+    border: 1px solid var(--hospitalGreen);
+    color: var(--hospitalGreen);
+}
+
+.navbarLeft ul,
+.navbarRight ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    height: 60px;
+}
+
+.navbarEmail {
+    color: var(--veryLightPink);
+    font-size: var(--sm);
+    margin-right: 12px;
+}
+
+.navbarShoppingCart {
+    position: relative;
+}
+
+.navbarShoppingCart div {
+    width: 8px;
+    height: 8px;
+    background-color: var(--hospitalGreen);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+
+    nav {
+        width: 91%;
+    }
+
+    .navbarLeft ul {
+        display: none;
+    }
+
+    .navbarEmail {
+        display: none;
+    }
+}
